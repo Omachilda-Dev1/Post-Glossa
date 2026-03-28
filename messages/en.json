@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "blog": "Blog",
+    "home": "Home",
+    "tags": "Topics",
+    "search": "Search",
+    "about": "About"
+  },
+  "home": {
+    "hero_title": "Words without borders",
+    "hero_subtitle": "Multilingual stories, ideas, and insights from around the world.",
+    "hero_cta": "Start Reading",
+    "latest_posts": "Latest Articles",
+    "featured": "Featured",
+    "view_all": "View all articles",
+    "topics_title": "Explore Topics",
+    "stats_posts": "Articles",
+    "stats_languages": "Languages",
+    "stats_authors": "Authors",
+    "marquee_text": "Multilingual · Global Perspectives · Language & Culture · Technology · SEO · Web Development · Learning · Productivity · "
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Explore our latest articles",
+    "read_more": "Read article",
+    "reading_time": "{minutes} min read",
+    "by": "By",
+    "published": "Published",
+    "related": "Related Articles",
+    "tags": "Topics",
+    "no_posts": "No articles found.",
+    "page": "Page {current} of {total}",
+    "prev": "Previous",
+    "next": "Next",
+    "all_tags": "All Topics",
+    "posts_tagged": "Articles tagged",
+    "back_to_blog": "Back to Blog",
+    "share": "Share",
+    "toc": "Table of Contents",
+    "search_placeholder": "Search articles...",
+    "search_results": "{count} results for \"{query}\"",
+    "no_results": "No results found for \"{query}\""
+  },
+  "footer": {
+    "tagline": "Words without borders",
+    "description": "A multilingual platform celebrating language, culture, and ideas from every corner of the world.",
+    "copyright": "© {year} Postglossa. All rights reserved.",
+    "languages": "Languages",
+    "navigation": "Navigation",
+    "made_with": "Made with passion for language"
+  },
+  "theme": {
+    "toggle_dark": "Switch to dark mode",
+    "toggle_light": "Switch to light mode"
+  },
+  "locale_switcher": {
+    "label": "Language",
+    "choose": "Choose language"
+  },
+  "search": {
+    "title": "Search",
+    "placeholder": "Search articles, topics, authors...",
+    "results": "{count} results",
+    "no_results": "No results found",
+    "try_again": "Try a different search term"
+  }
+}

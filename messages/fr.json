@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "blog": "Blog",
+    "home": "Accueil",
+    "tags": "Sujets",
+    "search": "Recherche",
+    "about": "À propos"
+  },
+  "home": {
+    "hero_title": "Les mots sans frontières",
+    "hero_subtitle": "Histoires, idées et perspectives multilingues du monde entier.",
+    "hero_cta": "Commencer à lire",
+    "latest_posts": "Derniers articles",
+    "featured": "À la une",
+    "view_all": "Voir tous les articles",
+    "topics_title": "Explorer les sujets",
+    "stats_posts": "Articles",
+    "stats_languages": "Langues",
+    "stats_authors": "Auteurs",
+    "marquee_text": "Multilingue · Perspectives mondiales · Langue & Culture · Technologie · SEO · Développement web · Apprentissage · Productivité · "
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Explorez nos derniers articles",
+    "read_more": "Lire l'article",
+    "reading_time": "{minutes} min de lecture",
+    "by": "Par",
+    "published": "Publié le",
+    "related": "Articles connexes",
+    "tags": "Sujets",
+    "no_posts": "Aucun article trouvé.",
+    "page": "Page {current} sur {total}",
+    "prev": "Précédent",
+    "next": "Suivant",
+    "all_tags": "Tous les sujets",
+    "posts_tagged": "Articles étiquetés",
+    "back_to_blog": "Retour au blog",
+    "share": "Partager",
+    "toc": "Table des matières",
+    "search_placeholder": "Rechercher des articles...",
+    "search_results": "{count} résultats pour \"{query}\"",
+    "no_results": "Aucun résultat pour \"{query}\""
+  },
+  "footer": {
+    "tagline": "Les mots sans frontières",
+    "description": "Une plateforme multilingue célébrant la langue, la culture et les idées de tous les coins du monde.",
+    "copyright": "© {year} Postglossa. Tous droits réservés.",
+    "languages": "Langues",
+    "navigation": "Navigation",
+    "made_with": "Fait avec passion pour les langues"
+  },
+  "theme": {
+    "toggle_dark": "Passer en mode sombre",
+    "toggle_light": "Passer en mode clair"
+  },
+  "locale_switcher": {
+    "label": "Langue",
+    "choose": "Choisir la langue"
+  },
+  "search": {
+    "title": "Recherche",
+    "placeholder": "Rechercher articles, sujets, auteurs...",
+    "results": "{count} résultats",
+    "no_results": "Aucun résultat trouvé",
+    "try_again": "Essayez un autre terme de recherche"
+  }
+}

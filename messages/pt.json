@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "blog": "Blog",
+    "home": "Início",
+    "tags": "Tópicos",
+    "search": "Buscar",
+    "about": "Sobre"
+  },
+  "home": {
+    "hero_title": "Palavras sem fronteiras",
+    "hero_subtitle": "Histórias, ideias e perspectivas multilíngues de todo o mundo.",
+    "hero_cta": "Começar a ler",
+    "latest_posts": "Últimos artigos",
+    "featured": "Destaque",
+    "view_all": "Ver todos os artigos",
+    "topics_title": "Explorar tópicos",
+    "stats_posts": "Artigos",
+    "stats_languages": "Idiomas",
+    "stats_authors": "Autores",
+    "marquee_text": "Multilíngue · Perspectivas globais · Língua e cultura · Tecnologia · SEO · Desenvolvimento web · Aprendizado · Produtividade · "
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Explore nossos últimos artigos",
+    "read_more": "Ler artigo",
+    "reading_time": "{minutes} min de leitura",
+    "by": "Por",
+    "published": "Publicado",
+    "related": "Artigos relacionados",
+    "tags": "Tópicos",
+    "no_posts": "Nenhum artigo encontrado.",
+    "page": "Página {current} de {total}",
+    "prev": "Anterior",
+    "next": "Próximo",
+    "all_tags": "Todos os tópicos",
+    "posts_tagged": "Artigos com tag",
+    "back_to_blog": "Voltar ao blog",
+    "share": "Compartilhar",
+    "toc": "Índice",
+    "search_placeholder": "Buscar artigos...",
+    "search_results": "{count} resultados para \"{query}\"",
+    "no_results": "Nenhum resultado para \"{query}\""
+  },
+  "footer": {
+    "tagline": "Palavras sem fronteiras",
+    "description": "Uma plataforma multilíngue que celebra a língua, a cultura e as ideias de todos os cantos do mundo.",
+    "copyright": "© {year} Postglossa. Todos os direitos reservados.",
+    "languages": "Idiomas",
+    "navigation": "Navegação",
+    "made_with": "Feito com paixão pelas línguas"
+  },
+  "theme": {
+    "toggle_dark": "Mudar para modo escuro",
+    "toggle_light": "Mudar para modo claro"
+  },
+  "locale_switcher": {
+    "label": "Idioma",
+    "choose": "Escolher idioma"
+  },
+  "search": {
+    "title": "Busca",
+    "placeholder": "Buscar artigos, tópicos, autores...",
+    "results": "{count} resultados",
+    "no_results": "Nenhum resultado encontrado",
+    "try_again": "Tente outro termo de busca"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "blog": "ブログ",
+    "home": "ホーム",
+    "tags": "トピック",
+    "search": "検索",
+    "about": "について"
+  },
+  "home": {
+    "hero_title": "国境のない言葉",
+    "hero_subtitle": "世界中から届く多言語のストーリー、アイデア、洞察。",
+    "hero_cta": "読み始める",
+    "latest_posts": "最新記事",
+    "featured": "注目",
+    "view_all": "すべての記事を見る",
+    "topics_title": "トピックを探る",
+    "stats_posts": "記事",
+    "stats_languages": "言語",
+    "stats_authors": "著者",
+    "marquee_text": "多言語 · グローバルな視点 · 言語と文化 · テクノロジー · SEO · ウェブ開発 · 学習 · 生産性 · "
+  },
+  "blog": {
+    "title": "ブログ",
+    "subtitle": "最新記事を探る",
+    "read_more": "記事を読む",
+    "reading_time": "{minutes}分で読める",
+    "by": "著者：",
+    "published": "公開日",
+    "related": "関連記事",
+    "tags": "トピック",
+    "no_posts": "記事が見つかりません。",
+    "page": "{total}ページ中{current}ページ",
+    "prev": "前へ",
+    "next": "次へ",
+    "all_tags": "すべてのトピック",
+    "posts_tagged": "タグ付き記事",
+    "back_to_blog": "ブログに戻る",
+    "share": "シェア",
+    "toc": "目次",
+    "search_placeholder": "記事を検索...",
+    "search_results": "「{query}」の検索結果：{count}件",
+    "no_results": "「{query}」の結果が見つかりません"
+  },
+  "footer": {
+    "tagline": "国境のない言葉",
+    "description": "世界中の言語、文化、アイデアを称える多言語プラットフォーム。",
+    "copyright": "© {year} Postglossa. 無断転載禁止。",
+    "languages": "言語",
+    "navigation": "ナビゲーション",
+    "made_with": "言語への情熱を込めて制作"
+  },
+  "theme": {
+    "toggle_dark": "ダークモードに切り替え",
+    "toggle_light": "ライトモードに切り替え"
+  },
+  "locale_switcher": {
+    "label": "言語",
+    "choose": "言語を選択"
+  },
+  "search": {
+    "title": "検索",
+    "placeholder": "記事、トピック、著者を検索...",
+    "results": "{count}件の結果",
+    "no_results": "結果が見つかりません",
+    "try_again": "別の検索語をお試しください"
+  }
+}

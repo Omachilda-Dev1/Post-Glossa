@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "blog": "博客",
+    "home": "首页",
+    "tags": "话题",
+    "search": "搜索",
+    "about": "关于"
+  },
+  "home": {
+    "hero_title": "没有边界的文字",
+    "hero_subtitle": "来自世界各地的多语言故事、想法和见解。",
+    "hero_cta": "开始阅读",
+    "latest_posts": "最新文章",
+    "featured": "精选",
+    "view_all": "查看所有文章",
+    "topics_title": "探索话题",
+    "stats_posts": "文章",
+    "stats_languages": "语言",
+    "stats_authors": "作者",
+    "marquee_text": "多语言 · 全球视角 · 语言与文化 · 技术 · SEO · 网页开发 · 学习 · 生产力 · "
+  },
+  "blog": {
+    "title": "博客",
+    "subtitle": "探索我们的最新文章",
+    "read_more": "阅读文章",
+    "reading_time": "{minutes}分钟阅读",
+    "by": "作者：",
+    "published": "发布于",
+    "related": "相关文章",
+    "tags": "话题",
+    "no_posts": "未找到文章。",
+    "page": "第{current}页，共{total}页",
+    "prev": "上一页",
+    "next": "下一页",
+    "all_tags": "所有话题",
+    "posts_tagged": "标签文章",
+    "back_to_blog": "返回博客",
+    "share": "分享",
+    "toc": "目录",
+    "search_placeholder": "搜索文章...",
+    "search_results": "\"{query}\"的{count}个结果",
+    "no_results": "未找到\"{query}\"的结果"
+  },
+  "footer": {
+    "tagline": "没有边界的文字",
+    "description": "一个庆祝来自世界各地语言、文化和思想的多语言平台。",
+    "copyright": "© {year} Postglossa。保留所有权利。",
+    "languages": "语言",
+    "navigation": "导航",
+    "made_with": "用对语言的热情制作"
+  },
+  "theme": {
+    "toggle_dark": "切换到深色模式",
+    "toggle_light": "切换到浅色模式"
+  },
+  "locale_switcher": {
+    "label": "语言",
+    "choose": "选择语言"
+  },
+  "search": {
+    "title": "搜索",
+    "placeholder": "搜索文章、话题、作者...",
+    "results": "{count}个结果",
+    "no_results": "未找到结果",
+    "try_again": "请尝试其他搜索词"
+  }
+}

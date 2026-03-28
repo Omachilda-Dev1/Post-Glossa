@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "blog": "Blog",
+    "home": "Inicio",
+    "tags": "Temas",
+    "search": "Buscar",
+    "about": "Acerca de"
+  },
+  "home": {
+    "hero_title": "Palabras sin fronteras",
+    "hero_subtitle": "Historias, ideas y perspectivas multilingües de todo el mundo.",
+    "hero_cta": "Empezar a leer",
+    "latest_posts": "Últimos artículos",
+    "featured": "Destacado",
+    "view_all": "Ver todos los artículos",
+    "topics_title": "Explorar temas",
+    "stats_posts": "Artículos",
+    "stats_languages": "Idiomas",
+    "stats_authors": "Autores",
+    "marquee_text": "Multilingüe · Perspectivas globales · Lengua y cultura · Tecnología · SEO · Desarrollo web · Aprendizaje · Productividad · "
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Explora nuestros últimos artículos",
+    "read_more": "Leer artículo",
+    "reading_time": "{minutes} min de lectura",
+    "by": "Por",
+    "published": "Publicado",
+    "related": "Artículos relacionados",
+    "tags": "Temas",
+    "no_posts": "No se encontraron artículos.",
+    "page": "Página {current} de {total}",
+    "prev": "Anterior",
+    "next": "Siguiente",
+    "all_tags": "Todos los temas",
+    "posts_tagged": "Artículos etiquetados",
+    "back_to_blog": "Volver al blog",
+    "share": "Compartir",
+    "toc": "Tabla de contenidos",
+    "search_placeholder": "Buscar artículos...",
+    "search_results": "{count} resultados para \"{query}\"",
+    "no_results": "No se encontraron resultados para \"{query}\""
+  },
+  "footer": {
+    "tagline": "Palabras sin fronteras",
+    "description": "Una plataforma multilingüe que celebra el lenguaje, la cultura y las ideas de todos los rincones del mundo.",
+    "copyright": "© {year} Postglossa. Todos los derechos reservados.",
+    "languages": "Idiomas",
+    "navigation": "Navegación",
+    "made_with": "Hecho con pasión por los idiomas"
+  },
+  "theme": {
+    "toggle_dark": "Cambiar a modo oscuro",
+    "toggle_light": "Cambiar a modo claro"
+  },
+  "locale_switcher": {
+    "label": "Idioma",
+    "choose": "Elegir idioma"
+  },
+  "search": {
+    "title": "Búsqueda",
+    "placeholder": "Buscar artículos, temas, autores...",
+    "results": "{count} resultados",
+    "no_results": "No se encontraron resultados",
+    "try_again": "Intenta con otro término de búsqueda"
+  }
+}

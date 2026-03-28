@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "blog": "Blog",
+    "home": "Startseite",
+    "tags": "Themen",
+    "search": "Suche",
+    "about": "Über uns"
+  },
+  "home": {
+    "hero_title": "Wörter ohne Grenzen",
+    "hero_subtitle": "Mehrsprachige Geschichten, Ideen und Einblicke aus aller Welt.",
+    "hero_cta": "Jetzt lesen",
+    "latest_posts": "Neueste Artikel",
+    "featured": "Empfohlen",
+    "view_all": "Alle Artikel anzeigen",
+    "topics_title": "Themen erkunden",
+    "stats_posts": "Artikel",
+    "stats_languages": "Sprachen",
+    "stats_authors": "Autoren",
+    "marquee_text": "Mehrsprachig · Globale Perspektiven · Sprache & Kultur · Technologie · SEO · Webentwicklung · Lernen · Produktivität · "
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Entdecken Sie unsere neuesten Artikel",
+    "read_more": "Artikel lesen",
+    "reading_time": "{minutes} Min. Lesezeit",
+    "by": "Von",
+    "published": "Veröffentlicht",
+    "related": "Ähnliche Artikel",
+    "tags": "Themen",
+    "no_posts": "Keine Artikel gefunden.",
+    "page": "Seite {current} von {total}",
+    "prev": "Zurück",
+    "next": "Weiter",
+    "all_tags": "Alle Themen",
+    "posts_tagged": "Artikel mit Tag",
+    "back_to_blog": "Zurück zum Blog",
+    "share": "Teilen",
+    "toc": "Inhaltsverzeichnis",
+    "search_placeholder": "Artikel suchen...",
+    "search_results": "{count} Ergebnisse für \"{query}\"",
+    "no_results": "Keine Ergebnisse für \"{query}\""
+  },
+  "footer": {
+    "tagline": "Wörter ohne Grenzen",
+    "description": "Eine mehrsprachige Plattform, die Sprache, Kultur und Ideen aus aller Welt feiert.",
+    "copyright": "© {year} Postglossa. Alle Rechte vorbehalten.",
+    "languages": "Sprachen",
+    "navigation": "Navigation",
+    "made_with": "Mit Leidenschaft für Sprachen gemacht"
+  },
+  "theme": {
+    "toggle_dark": "Dunkelmodus aktivieren",
+    "toggle_light": "Hellmodus aktivieren"
+  },
+  "locale_switcher": {
+    "label": "Sprache",
+    "choose": "Sprache wählen"
+  },
+  "search": {
+    "title": "Suche",
+    "placeholder": "Artikel, Themen, Autoren suchen...",
+    "results": "{count} Ergebnisse",
+    "no_results": "Keine Ergebnisse gefunden",
+    "try_again": "Versuchen Sie einen anderen Suchbegriff"
+  }
+}
