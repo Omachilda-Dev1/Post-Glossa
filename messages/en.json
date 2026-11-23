@@ -1,27 +1,35 @@
 {
   "nav": {
-    "blog": "Blog",
+    "blog": "Journal",
     "home": "Home",
     "tags": "Topics",
     "search": "Search",
-    "about": "About"
+    "about": "About",
+    "wire": "The Wire"
   },
   "home": {
-    "hero_title": "Words without borders",
-    "hero_subtitle": "Multilingual stories, ideas, and insights from around the world.",
+    "hero_title": "Technology and the world, read slowly",
+    "hero_subtitle": "An independent notebook on building for the web, with a live wire of tech and world headlines beside it.",
     "hero_cta": "Start Reading",
     "latest_posts": "Latest Articles",
     "featured": "Featured",
-    "view_all": "View all articles",
+    "view_all": "All essays",
     "topics_title": "Explore Topics",
     "stats_posts": "Articles",
     "stats_languages": "Languages",
     "stats_authors": "Authors",
-    "marquee_text": "Multilingual · Global Perspectives · Language & Culture · Technology · SEO · Web Development · Learning · Productivity · "
+    "marquee_text": "Multilingual · Global Perspectives · Language & Culture · Technology · SEO · Web Development · Learning · Productivity · ",
+    "editor_note_title": "From the editor",
+    "editor_note": "I write long pieces on how software gets built and how language shapes the web. Beside them, the Wire pulls in what the world's newsrooms are reporting, so you don't need ten tabs open.",
+    "about_link": "Why this exists",
+    "more_wire": "Full wire",
+    "tech_desk": "Tech desk",
+    "world_desk": "World desk",
+    "notebook": "More from the journal"
   },
   "blog": {
-    "title": "Blog",
-    "subtitle": "Explore our latest articles",
+    "title": "Journal",
+    "subtitle": "Essays and field notes on software, language, and the web. One idea at a time, with the code left in.",
     "read_more": "Read article",
     "reading_time": "{minutes} min read",
     "by": "By",
@@ -32,18 +40,23 @@
     "page": "Page {current} of {total}",
     "prev": "Previous",
     "next": "Next",
-    "all_tags": "All Topics",
+    "all_tags": "Topics",
     "posts_tagged": "Articles tagged",
     "back_to_blog": "Back to Blog",
     "share": "Share",
     "toc": "Table of Contents",
     "search_placeholder": "Search articles...",
     "search_results": "{count} results for \"{query}\"",
-    "no_results": "No results found for \"{query}\""
+    "no_results": "No results found for \"{query}\"",
+    "kicker": "The journal",
+    "written_by": "Written by",
+    "post_count": "{count, plural, one {# essay} other {# essays}}",
+    "copied": "Link copied",
+    "copy_link": "Copy link"
   },
   "footer": {
-    "tagline": "Words without borders",
-    "description": "A multilingual platform celebrating language, culture, and ideas from every corner of the world.",
+    "tagline": "Technology and the world, read slowly",
+    "description": "An independent notebook on technology, language, and the web, with a live wire of the day's headlines.",
     "copyright": "© {year} Postglossa. All rights reserved.",
     "languages": "Languages",
     "navigation": "Navigation",
@@ -59,9 +72,26 @@
   },
   "search": {
     "title": "Search",
-    "placeholder": "Search articles, topics, authors...",
+    "placeholder": "Search the journal",
     "results": "{count} results",
     "no_results": "No results found",
-    "try_again": "Try a different search term"
+    "try_again": "Try a different search term",
+    "hint": "Search by title, topic, or author."
+  },
+  "wire": {
+    "title": "The Wire",
+    "subtitle": "Live tech and world headlines from newsrooms worth reading, refreshed every ten minutes. Every story opens on the original publisher's site.",
+    "live": "Live",
+    "all": "All",
+    "tech": "Tech",
+    "world": "World",
+    "latest": "Latest story",
+    "english_note": "Headlines appear in English, as published.",
+    "filters": "Filter the wire",
+    "empty": "The feeds are quiet right now. Check back in a few minutes.",
+    "disclaimer": "Headlines and summaries belong to their publishers and are shown as they appear in public RSS feeds. The same data is available as JSON at",
+    "sources": "Wire sources",
+    "meanwhile": "Meanwhile",
+    "footer_note": "Wire refreshed every 10 minutes"
   }
 }

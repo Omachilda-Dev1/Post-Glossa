@@ -4,7 +4,8 @@
     "home": "Início",
     "tags": "Tópicos",
     "search": "Buscar",
-    "about": "Sobre"
+    "about": "Sobre",
+    "wire": "Agência"
   },
   "home": {
     "hero_title": "Palavras sem fronteiras",
@@ -17,7 +18,14 @@
     "stats_posts": "Artigos",
     "stats_languages": "Idiomas",
     "stats_authors": "Autores",
-    "marquee_text": "Multilíngue · Perspectivas globais · Língua e cultura · Tecnologia · SEO · Desenvolvimento web · Aprendizado · Produtividade · "
+    "marquee_text": "Multilíngue · Perspectivas globais · Língua e cultura · Tecnologia · SEO · Desenvolvimento web · Aprendizado · Produtividade · ",
+    "editor_note_title": "Nota da editora",
+    "editor_note": "Escrevo textos longos sobre como o software é construído e como a língua molda a web. Ao lado, a Agência reúne o que as redações do mundo estão noticiando.",
+    "about_link": "Por que existe",
+    "more_wire": "Agência completa",
+    "tech_desk": "Tecnologia",
+    "world_desk": "Mundo",
+    "notebook": "Mais do diário"
   },
   "blog": {
     "title": "Blog",
@@ -39,7 +47,12 @@
     "toc": "Índice",
     "search_placeholder": "Buscar artigos...",
     "search_results": "{count} resultados para \"{query}\"",
-    "no_results": "Nenhum resultado para \"{query}\""
+    "no_results": "Nenhum resultado para \"{query}\"",
+    "kicker": "O diário",
+    "written_by": "Escrito por",
+    "post_count": "{count, plural, one {# artigo} other {# artigos}}",
+    "copied": "Link copiado",
+    "copy_link": "Copiar link"
   },
   "footer": {
     "tagline": "Palavras sem fronteiras",
@@ -62,6 +75,23 @@
     "placeholder": "Buscar artigos, tópicos, autores...",
     "results": "{count} resultados",
     "no_results": "Nenhum resultado encontrado",
-    "try_again": "Tente outro termo de busca"
+    "try_again": "Tente outro termo de busca",
+    "hint": "Busque por título, tema ou autor."
+  },
+  "wire": {
+    "title": "Agência",
+    "subtitle": "Manchetes de tecnologia e do mundo de redações que valem a leitura, atualizadas a cada dez minutos. Cada notícia abre no site do editor original.",
+    "live": "Ao vivo",
+    "all": "Tudo",
+    "tech": "Tecnologia",
+    "world": "Mundo",
+    "latest": "Última notícia",
+    "english_note": "As manchetes aparecem em inglês, como publicadas.",
+    "filters": "Filtrar a agência",
+    "empty": "Os feeds estão calmos agora. Volte em alguns minutos.",
+    "disclaimer": "Manchetes e resumos pertencem aos seus editores e vêm de feeds RSS públicos. Os mesmos dados estão disponíveis em JSON em",
+    "sources": "Fontes",
+    "meanwhile": "Enquanto isso",
+    "footer_note": "Agência atualizada a cada 10 minutos"
   }
 }

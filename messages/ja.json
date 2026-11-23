@@ -4,7 +4,8 @@
     "home": "ホーム",
     "tags": "トピック",
     "search": "検索",
-    "about": "について"
+    "about": "について",
+    "wire": "速報"
   },
   "home": {
     "hero_title": "国境のない言葉",
@@ -17,7 +18,14 @@
     "stats_posts": "記事",
     "stats_languages": "言語",
     "stats_authors": "著者",
-    "marquee_text": "多言語 · グローバルな視点 · 言語と文化 · テクノロジー · SEO · ウェブ開発 · 学習 · 生産性 · "
+    "marquee_text": "多言語 · グローバルな視点 · 言語と文化 · テクノロジー · SEO · ウェブ開発 · 学習 · 生産性 · ",
+    "editor_note_title": "編集後記",
+    "editor_note": "ソフトウェアのつくり方や、言語がウェブをどう形づくるかについて長文を書いています。その横で「速報」が世界の報道機関のニュースを集めます。",
+    "about_link": "このサイトについて",
+    "more_wire": "速報をすべて見る",
+    "tech_desk": "テック",
+    "world_desk": "国際",
+    "notebook": "ジャーナルから"
   },
   "blog": {
     "title": "ブログ",
@@ -39,7 +47,12 @@
     "toc": "目次",
     "search_placeholder": "記事を検索...",
     "search_results": "「{query}」の検索結果：{count}件",
-    "no_results": "「{query}」の結果が見つかりません"
+    "no_results": "「{query}」の結果が見つかりません",
+    "kicker": "ジャーナル",
+    "written_by": "執筆",
+    "post_count": "{count} 本の記事",
+    "copied": "コピーしました",
+    "copy_link": "リンクをコピー"
   },
   "footer": {
     "tagline": "国境のない言葉",
@@ -62,6 +75,23 @@
     "placeholder": "記事、トピック、著者を検索...",
     "results": "{count}件の結果",
     "no_results": "結果が見つかりません",
-    "try_again": "別の検索語をお試しください"
+    "try_again": "別の検索語をお試しください",
+    "hint": "タイトル、トピック、著者で検索できます。"
+  },
+  "wire": {
+    "title": "速報",
+    "subtitle": "信頼できる報道機関のテック・国際ニュースを10分ごとに更新。記事は元の発行元サイトで開きます。",
+    "live": "ライブ",
+    "all": "すべて",
+    "tech": "テック",
+    "world": "国際",
+    "latest": "最新記事",
+    "english_note": "見出しは原文の英語で表示されます。",
+    "filters": "速報を絞り込む",
+    "empty": "現在フィードに新着はありません。数分後にもう一度ご確認ください。",
+    "disclaimer": "見出しと要約は各発行元に帰属し、公開 RSS フィードから取得しています。同じデータは JSON でも利用できます：",
+    "sources": "情報源",
+    "meanwhile": "その間に",
+    "footer_note": "速報は10分ごとに更新"
   }
 }

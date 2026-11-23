@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildPageMetadata } from "@/lib/seo";
 import SearchClient from "@/components/SearchClient";
 import { getAllPosts } from "@/lib/mdx";
@@ -14,6 +14,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function SearchPage({ params }: Props) {
-  const posts = getAllPosts(params.locale);
+  setRequestLocale(params.locale);
+  // Don't ship full article bodies to the browser; search runs on metadata.
+  const posts = getAllPosts(params.locale).map((p) => ({ ...p, content: "" }));
   return <SearchClient posts={posts} locale={params.locale} />;
 }

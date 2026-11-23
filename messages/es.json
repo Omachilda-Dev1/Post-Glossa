@@ -4,7 +4,8 @@
     "home": "Inicio",
     "tags": "Temas",
     "search": "Buscar",
-    "about": "Acerca de"
+    "about": "Acerca de",
+    "wire": "Teletipo"
   },
   "home": {
     "hero_title": "Palabras sin fronteras",
@@ -17,7 +18,14 @@
     "stats_posts": "Artículos",
     "stats_languages": "Idiomas",
     "stats_authors": "Autores",
-    "marquee_text": "Multilingüe · Perspectivas globales · Lengua y cultura · Tecnología · SEO · Desarrollo web · Aprendizaje · Productividad · "
+    "marquee_text": "Multilingüe · Perspectivas globales · Lengua y cultura · Tecnología · SEO · Desarrollo web · Aprendizaje · Productividad · ",
+    "editor_note_title": "Nota de la editora",
+    "editor_note": "Escribo textos largos sobre cómo se construye el software y cómo el idioma da forma a la web. Al lado, el Teletipo reúne lo que informan las redacciones del mundo.",
+    "about_link": "Por qué existe",
+    "more_wire": "Teletipo completo",
+    "tech_desk": "Tecnología",
+    "world_desk": "Mundo",
+    "notebook": "Más del diario"
   },
   "blog": {
     "title": "Blog",
@@ -39,7 +47,12 @@
     "toc": "Tabla de contenidos",
     "search_placeholder": "Buscar artículos...",
     "search_results": "{count} resultados para \"{query}\"",
-    "no_results": "No se encontraron resultados para \"{query}\""
+    "no_results": "No se encontraron resultados para \"{query}\"",
+    "kicker": "El diario",
+    "written_by": "Escrito por",
+    "post_count": "{count, plural, one {# artículo} other {# artículos}}",
+    "copied": "Enlace copiado",
+    "copy_link": "Copiar enlace"
   },
   "footer": {
     "tagline": "Palabras sin fronteras",
@@ -62,6 +75,23 @@
     "placeholder": "Buscar artículos, temas, autores...",
     "results": "{count} resultados",
     "no_results": "No se encontraron resultados",
-    "try_again": "Intenta con otro término de búsqueda"
+    "try_again": "Intenta con otro término de búsqueda",
+    "hint": "Busca por título, tema o autor."
+  },
+  "wire": {
+    "title": "Teletipo",
+    "subtitle": "Titulares de tecnología y del mundo de redacciones que vale la pena leer, actualizados cada diez minutos. Cada noticia se abre en el sitio de su editor.",
+    "live": "En directo",
+    "all": "Todo",
+    "tech": "Tecnología",
+    "world": "Mundo",
+    "latest": "Última noticia",
+    "english_note": "Los titulares aparecen en inglés, tal como se publicaron.",
+    "filters": "Filtrar el teletipo",
+    "empty": "Los feeds están tranquilos ahora. Vuelve en unos minutos.",
+    "disclaimer": "Los titulares y resúmenes pertenecen a sus editores y provienen de feeds RSS públicos. Los mismos datos están disponibles en JSON en",
+    "sources": "Fuentes",
+    "meanwhile": "Mientras tanto",
+    "footer_note": "Teletipo actualizado cada 10 minutos"
   }
 }
