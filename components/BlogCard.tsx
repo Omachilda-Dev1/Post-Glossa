@@ -1,89 +1,95 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Post } from "@/lib/mdx";
+import { useTranslations } from "next-intl";
+import type { Post } from "@/lib/mdx";
+import { formatDate } from "@/lib/format";
 
 interface BlogCardProps {
   post: Post;
   locale: string;
-  featured?: boolean;
-  featuredLabel?: string;
-  readingTimeLabel?: string;
+  variant?: "lead" | "standard" | "list";
+  priority?: boolean;
 }
 
-export default function BlogCard({ post, locale, featured = false, featuredLabel = "Featured", readingTimeLabel }: BlogCardProps) {
-  const timeLabel = readingTimeLabel ?? `${post.readingTime} min`;
+/** An essay from the journal. `lead` is the front-page story, `list` a compact text row. */
+export default function BlogCard({ post, locale, variant = "standard", priority = false }: BlogCardProps) {
+  const t = useTranslations("blog");
+  const href = `/${locale}/blog/${post.slug}`;
+  const minutes = post.readingTime || Math.max(1, Math.round(post.content.split(/\s+/).length / 230));
+  const tag = post.tags?.[0];
 
-  if (featured) {
+  const meta = (
+    <div className="flex flex-wrap items-center gap-x-2 gap-y-1 kicker">
+      <span className="text-ink/80">{post.author}</span>
+      <span aria-hidden="true">·</span>
+      <time dateTime={post.date}>{formatDate(post.date, locale, "short")}</time>
+      <span aria-hidden="true">·</span>
+      <span>{t("reading_time", { minutes })}</span>
+    </div>
+  );
+
+  if (variant === "lead") {
     return (
-      <article className="bg-white dark:bg-[#1a0a04] rounded-3xl overflow-hidden border border-gray-100 dark:border-[#501907] shadow-sm hover:shadow-md transition-shadow">
+      <article className="group">
         {post.coverImage && (
-          <div className="relative h-56 w-full overflow-hidden">
-            <Image src={post.coverImage} alt={post.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-            <div className="absolute top-4 left-4">
-              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-brand text-white">{featuredLabel}</span>
-            </div>
-          </div>
+          <Link href={href} tabIndex={-1} aria-hidden="true" className="block relative aspect-[16/9] overflow-hidden bg-rule/50 mb-5">
+            <Image
+              src={post.coverImage}
+              alt=""
+              fill
+              priority={priority}
+              sizes="(max-width: 1024px) 100vw, 760px"
+              className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+            />
+          </Link>
         )}
-        <div className="p-6">
-          <TagList tags={post.tags} locale={locale} limit={3} />
-          <h2 className="font-serif text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2 leading-snug hover:text-brand transition-colors">
-            <Link href={`/${locale}/blog/${post.slug}`}>{post.title}</Link>
-          </h2>
-          <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-4">{post.description}</p>
-          <PostMeta author={post.author} timeLabel={timeLabel} />
-        </div>
+        {tag && (
+          <Link href={`/${locale}/blog/tags/${encodeURIComponent(tag)}`} className="kicker-accent hover:underline underline-offset-4">
+            {tag}
+          </Link>
+        )}
+        <h2 className="mt-2 font-serif text-[2rem] sm:text-[2.6rem] font-medium leading-[1.08] tracking-[-0.02em] text-ink text-balance">
+          <Link href={href} className="headline-link">{post.title}</Link>
+        </h2>
+        <p className="mt-4 font-serif text-lg sm:text-xl leading-relaxed text-ink/75 text-pretty max-w-2xl">{post.description}</p>
+        <div className="mt-4">{meta}</div>
+      </article>
+    );
+  }
+
+  if (variant === "list") {
+    return (
+      <article className="group py-5 border-b border-rule">
+        {tag && <span className="kicker-accent">{tag}</span>}
+        <h3 className="mt-1.5 font-serif text-xl leading-snug text-ink text-pretty">
+          <Link href={href} className="headline-link">{post.title}</Link>
+        </h3>
+        <p className="mt-2 text-[15px] leading-relaxed text-muted line-clamp-2">{post.description}</p>
+        <div className="mt-3">{meta}</div>
       </article>
     );
   }
 
   return (
-    <article className="flex flex-col bg-white dark:bg-[#1a0a04] rounded-2xl overflow-hidden border border-gray-100 dark:border-[#501907] shadow-sm hover:shadow-md transition-shadow">
+    <article className="group flex flex-col">
       {post.coverImage && (
-        <Link href={`/${locale}/blog/${post.slug}`} tabIndex={-1} aria-hidden="true">
-          <div className="relative h-44 w-full overflow-hidden">
-            <Image src={post.coverImage} alt={post.title} fill className="object-cover hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
-          </div>
+        <Link href={href} tabIndex={-1} aria-hidden="true" className="block relative aspect-[3/2] overflow-hidden bg-rule/50 mb-4">
+          <Image
+            src={post.coverImage}
+            alt=""
+            fill
+            priority={priority}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
+            className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+          />
         </Link>
       )}
-      <div className="flex flex-col flex-1 p-5">
-        <TagList tags={post.tags} locale={locale} limit={2} />
-        <h2 className="font-serif text-lg font-semibold text-gray-900 dark:text-white mt-2 mb-2 leading-snug">
-          <Link href={`/${locale}/blog/${post.slug}`} className="hover:text-brand transition-colors">
-            {post.title}
-          </Link>
-        </h2>
-        <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 flex-1 mb-4">{post.description}</p>
-        <PostMeta author={post.author} timeLabel={timeLabel} />
-      </div>
+      {tag && <span className="kicker-accent">{tag}</span>}
+      <h3 className="mt-1.5 font-serif text-[1.35rem] leading-snug text-ink text-pretty">
+        <Link href={href} className="headline-link">{post.title}</Link>
+      </h3>
+      <p className="mt-2 text-[15px] leading-relaxed text-muted line-clamp-3">{post.description}</p>
+      <div className="mt-3">{meta}</div>
     </article>
-  );
-}
-
-function TagList({ tags, locale, limit }: { tags: string[]; locale: string; limit: number }) {
-  if (!tags?.length) return null;
-  return (
-    <div className="flex flex-wrap gap-1.5">
-      {tags.slice(0, limit).map((tag) => (
-        <Link key={tag} href={`/${locale}/blog/tags/${encodeURIComponent(tag)}`}
-          className="text-xs font-medium px-2.5 py-0.5 rounded-full bg-brand/10 text-brand hover:bg-brand hover:text-white transition-colors">
-          {tag}
-        </Link>
-      ))}
-    </div>
-  );
-}
-
-function PostMeta({ author, timeLabel }: { author: string; timeLabel: string }) {
-  return (
-    <div className="flex items-center justify-between text-xs text-gray-500 pt-3 border-t border-gray-100 dark:border-[#501907]">
-      <div className="flex items-center gap-1.5">
-        <div className="w-5 h-5 rounded-full bg-brand/20 flex items-center justify-center text-brand text-[10px] font-bold">
-          {author.charAt(0)}
-        </div>
-        <span className="font-medium text-gray-700 dark:text-gray-300">{author}</span>
-      </div>
-      <span className="text-brand/70">{timeLabel}</span>
-    </div>
   );
 }

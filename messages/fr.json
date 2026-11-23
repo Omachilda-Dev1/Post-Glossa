@@ -4,7 +4,8 @@
     "home": "Accueil",
     "tags": "Sujets",
     "search": "Recherche",
-    "about": "À propos"
+    "about": "À propos",
+    "wire": "Le Fil"
   },
   "home": {
     "hero_title": "Les mots sans frontières",
@@ -17,7 +18,14 @@
     "stats_posts": "Articles",
     "stats_languages": "Langues",
     "stats_authors": "Auteurs",
-    "marquee_text": "Multilingue · Perspectives mondiales · Langue & Culture · Technologie · SEO · Développement web · Apprentissage · Productivité · "
+    "marquee_text": "Multilingue · Perspectives mondiales · Langue & Culture · Technologie · SEO · Développement web · Apprentissage · Productivité · ",
+    "editor_note_title": "Le mot de l'éditrice",
+    "editor_note": "J'écris des textes longs sur la fabrication du logiciel et sur la façon dont la langue façonne le web. À côté, le Fil rassemble ce que rapportent les rédactions du monde entier.",
+    "about_link": "Pourquoi ce site",
+    "more_wire": "Tout le fil",
+    "tech_desk": "Tech",
+    "world_desk": "Monde",
+    "notebook": "Plus du journal"
   },
   "blog": {
     "title": "Blog",
@@ -39,7 +47,12 @@
     "toc": "Table des matières",
     "search_placeholder": "Rechercher des articles...",
     "search_results": "{count} résultats pour \"{query}\"",
-    "no_results": "Aucun résultat pour \"{query}\""
+    "no_results": "Aucun résultat pour \"{query}\"",
+    "kicker": "Le journal",
+    "written_by": "Écrit par",
+    "post_count": "{count, plural, one {# article} other {# articles}}",
+    "copied": "Lien copié",
+    "copy_link": "Copier le lien"
   },
   "footer": {
     "tagline": "Les mots sans frontières",
@@ -62,6 +75,23 @@
     "placeholder": "Rechercher articles, sujets, auteurs...",
     "results": "{count} résultats",
     "no_results": "Aucun résultat trouvé",
-    "try_again": "Essayez un autre terme de recherche"
+    "try_again": "Essayez un autre terme de recherche",
+    "hint": "Cherchez par titre, sujet ou auteur."
+  },
+  "wire": {
+    "title": "Le Fil",
+    "subtitle": "Les titres tech et monde des rédactions qui comptent, actualisés toutes les dix minutes. Chaque article s'ouvre sur le site de son éditeur.",
+    "live": "En direct",
+    "all": "Tout",
+    "tech": "Tech",
+    "world": "Monde",
+    "latest": "Dernier article",
+    "english_note": "Les titres sont en anglais, tels que publiés.",
+    "filters": "Filtrer le fil",
+    "empty": "Les flux sont calmes pour le moment. Revenez dans quelques minutes.",
+    "disclaimer": "Les titres et résumés appartiennent à leurs éditeurs et proviennent de flux RSS publics. Les mêmes données sont disponibles en JSON :",
+    "sources": "Sources du fil",
+    "meanwhile": "Pendant ce temps",
+    "footer_note": "Fil actualisé toutes les 10 minutes"
   }
 }

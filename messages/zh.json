@@ -4,7 +4,8 @@
     "home": "首页",
     "tags": "话题",
     "search": "搜索",
-    "about": "关于"
+    "about": "关于",
+    "wire": "快讯"
   },
   "home": {
     "hero_title": "没有边界的文字",
@@ -17,7 +18,14 @@
     "stats_posts": "文章",
     "stats_languages": "语言",
     "stats_authors": "作者",
-    "marquee_text": "多语言 · 全球视角 · 语言与文化 · 技术 · SEO · 网页开发 · 学习 · 生产力 · "
+    "marquee_text": "多语言 · 全球视角 · 语言与文化 · 技术 · SEO · 网页开发 · 学习 · 生产力 · ",
+    "editor_note_title": "编者按",
+    "editor_note": "我撰写关于软件如何构建、语言如何塑造网络的长文。旁边的「快讯」汇集全球新闻机构的最新报道。",
+    "about_link": "关于本站",
+    "more_wire": "查看全部快讯",
+    "tech_desk": "科技",
+    "world_desk": "国际",
+    "notebook": "更多文章"
   },
   "blog": {
     "title": "博客",
@@ -39,7 +47,12 @@
     "toc": "目录",
     "search_placeholder": "搜索文章...",
     "search_results": "\"{query}\"的{count}个结果",
-    "no_results": "未找到\"{query}\"的结果"
+    "no_results": "未找到\"{query}\"的结果",
+    "kicker": "文集",
+    "written_by": "作者",
+    "post_count": "{count} 篇文章",
+    "copied": "已复制链接",
+    "copy_link": "复制链接"
   },
   "footer": {
     "tagline": "没有边界的文字",
@@ -62,6 +75,23 @@
     "placeholder": "搜索文章、话题、作者...",
     "results": "{count}个结果",
     "no_results": "未找到结果",
-    "try_again": "请尝试其他搜索词"
+    "try_again": "请尝试其他搜索词",
+    "hint": "按标题、主题或作者搜索。"
+  },
+  "wire": {
+    "title": "快讯",
+    "subtitle": "来自值得一读的新闻机构的科技与国际头条，每十分钟更新一次。每条新闻都会在原发布方网站打开。",
+    "live": "直播",
+    "all": "全部",
+    "tech": "科技",
+    "world": "国际",
+    "latest": "最新报道",
+    "english_note": "标题以英文原文显示。",
+    "filters": "筛选快讯",
+    "empty": "目前暂无新内容，请几分钟后再来。",
+    "disclaimer": "标题和摘要归各发布方所有，来自公开的 RSS 源。相同数据也以 JSON 格式提供：",
+    "sources": "新闻来源",
+    "meanwhile": "与此同时",
+    "footer_note": "快讯每 10 分钟更新"
   }
 }

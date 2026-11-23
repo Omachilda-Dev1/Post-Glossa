@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllTags, getPostsByTag } from "@/lib/mdx";
@@ -13,37 +13,33 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
   return buildPageMetadata(t("all_tags"), t("subtitle"), locale, "/blog/tags");
 }
 
-export default async function TagsPage({ params }: Props) {
-  const locale = params.locale;
+export default async function TagsPage({ params: { locale } }: Props) {
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "blog" });
-  const tags = getAllTags(locale);
+  const tags = getAllTags(locale)
+    .map((tag) => ({ tag, posts: getPostsByTag(tag, locale) }))
+    .sort((a, b) => b.posts.length - a.posts.length || a.tag.localeCompare(b.tag));
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-14">
-      <header className="mb-12">
-        <h1 className="font-serif text-4xl font-bold text-gray-900 dark:text-white mb-3">
-          {t("all_tags")}
-        </h1>
-        <p className="text-gray-500 dark:text-gray-400">{t("subtitle")}</p>
+    <div className="mx-auto max-w-page px-4 sm:px-6 pt-10">
+      <header className="pb-8 border-b border-rule">
+        <p className="kicker-accent">{t("kicker")}</p>
+        <h1 className="mt-3 font-serif text-5xl sm:text-6xl tracking-[-0.03em] text-ink">{t("all_tags")}</h1>
       </header>
 
-      <div className="flex flex-wrap gap-3">
-        {tags.map((tag) => {
-          const count = getPostsByTag(tag, locale).length;
-          return (
-            <Link
-              key={tag}
-              href={`/${locale}/blog/tags/${encodeURIComponent(tag)}`}
-              className="flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-medium hover:bg-brand hover:text-white transition-colors"
-            >
-              <span>{tag}</span>
-              <span className="text-xs px-1.5 py-0.5 rounded-full bg-black/10 dark:bg-white/10 font-semibold">
-                {count}
+      <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10">
+        {tags.map(({ tag, posts }) => (
+          <li key={tag} className="border-b border-rule">
+            <Link href={`/${locale}/blog/tags/${encodeURIComponent(tag)}`} className="group flex items-baseline justify-between gap-4 py-5">
+              <span>
+                <span className="font-serif text-2xl text-ink group-hover:text-accent transition-colors">{tag}</span>
+                <span className="mt-1 block text-sm text-muted line-clamp-1">{posts[0]?.title}</span>
               </span>
+              <span className="font-mono text-sm text-muted tabular-nums">{String(posts.length).padStart(2, "0")}</span>
             </Link>
-          );
-        })}
-      </div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

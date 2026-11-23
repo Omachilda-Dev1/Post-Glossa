@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Post } from "./mdx";
+import { Post, getPostBySlug } from "./mdx";
 import { locales } from "@/i18n";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://postglossa.com";
@@ -7,7 +7,12 @@ const siteName = "Postglossa";
 
 export function buildPostMetadata(post: Post, locale: string): Metadata {
   const url = `${siteUrl}/${locale}/blog/${post.slug}`;
-  const hreflang = Object.fromEntries(locales.map((l) => [l, `${siteUrl}/${l}/blog/${post.slug}`]));
+  // Slugs are translated per language, so only point at versions that exist.
+  const hreflang = Object.fromEntries(
+    locales
+      .filter((l) => l === locale || getPostBySlug(post.slug, l))
+      .map((l) => [l, `${siteUrl}/${l}/blog/${post.slug}`])
+  );
   return {
     title: post.title,
     description: post.description,
@@ -59,22 +64,24 @@ export function articleJsonLd(post: Post, locale: string) {
     datePublished: post.date,
     dateModified: post.date,
     author: { "@type": "Person", name: post.author },
+    keywords: post.tags?.join(", "),
     publisher: { "@type": "Organization", name: siteName, url: siteUrl },
     url: `${siteUrl}/${locale}/blog/${post.slug}`,
     inLanguage: locale,
   };
 }
 
-export function websiteJsonLd() {
+export function websiteJsonLd(locale = "en") {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: siteName,
-    url: siteUrl,
-    description: "Words without borders — a multilingual blog platform",
+    url: `${siteUrl}/${locale}`,
+    inLanguage: locale,
+    description: "An independent notebook on technology and the world, with a live wire of tech and world headlines.",
     potentialAction: {
       "@type": "SearchAction",
-      target: `${siteUrl}/search?q={search_term_string}`,
+      target: `${siteUrl}/${locale}/search?q={search_term_string}`,
       "query-input": "required name=search_term_string",
     },
   };

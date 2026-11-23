@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import { getAllTags, getPostsByTag } from "@/lib/mdx";
 import { buildPageMetadata } from "@/lib/seo";
@@ -11,13 +11,7 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  const result: { locale: string; tag: string }[] = [];
-  for (const locale of locales) {
-    for (const tag of getAllTags(locale)) {
-      result.push({ locale, tag: encodeURIComponent(tag) });
-    }
-  }
-  return result;
+  return locales.flatMap((locale) => getAllTags(locale).map((tag) => ({ locale, tag: encodeURIComponent(tag) })));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -28,31 +22,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function TagPage({ params }: Props) {
   const locale = params.locale;
+  setRequestLocale(locale);
   const decodedTag = decodeURIComponent(params.tag);
   const t = await getTranslations({ locale, namespace: "blog" });
   const posts = getPostsByTag(decodedTag, locale);
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14">
-      <header className="mb-10">
-        <Link href={`/${locale}/blog/tags`} className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-brand transition-colors mb-4">
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16l-4-4m0 0l4-4m-4 4h18" />
-          </svg>
-          {t("all_tags")}
-        </Link>
-        <h1 className="font-serif text-4xl font-bold text-gray-900 dark:text-white">
-          {t("posts_tagged")}: <span className="text-brand">{decodedTag}</span>
+    <div className="mx-auto max-w-page px-4 sm:px-6 pt-10">
+      <header className="pb-8 border-b border-rule">
+        <Link href={`/${locale}/blog/tags`} className="kicker hover:text-accent">← {t("all_tags")}</Link>
+        <h1 className="mt-4 font-serif text-5xl sm:text-6xl tracking-[-0.03em] text-ink">
+          <span className="text-accent">#</span>{decodedTag}
         </h1>
-        <p className="mt-2 text-gray-500">{posts.length} {posts.length === 1 ? "article" : "articles"}</p>
+        <p className="mt-3 kicker">{t("post_count", { count: posts.length })}</p>
       </header>
 
       {posts.length === 0 ? (
-        <p className="text-gray-500 py-20 text-center">{t("no_posts")}</p>
+        <p className="py-24 text-center font-serif text-xl italic text-muted">{t("no_posts")}</p>
       ) : (
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-x-10 gap-y-12 pt-10 sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
-            <BlogCard key={post.slug} post={post} locale={locale} readingTimeLabel={post.readingTimeText} />
+            <BlogCard key={post.slug} post={post} locale={locale} />
           ))}
         </div>
       )}

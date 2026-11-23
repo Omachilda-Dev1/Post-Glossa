@@ -4,7 +4,8 @@
     "home": "Startseite",
     "tags": "Themen",
     "search": "Suche",
-    "about": "Über uns"
+    "about": "Über uns",
+    "wire": "Ticker"
   },
   "home": {
     "hero_title": "Wörter ohne Grenzen",
@@ -17,7 +18,14 @@
     "stats_posts": "Artikel",
     "stats_languages": "Sprachen",
     "stats_authors": "Autoren",
-    "marquee_text": "Mehrsprachig · Globale Perspektiven · Sprache & Kultur · Technologie · SEO · Webentwicklung · Lernen · Produktivität · "
+    "marquee_text": "Mehrsprachig · Globale Perspektiven · Sprache & Kultur · Technologie · SEO · Webentwicklung · Lernen · Produktivität · ",
+    "editor_note_title": "Von der Redaktion",
+    "editor_note": "Ich schreibe lange Texte darüber, wie Software entsteht und wie Sprache das Web prägt. Daneben sammelt der Ticker, was Redaktionen weltweit berichten.",
+    "about_link": "Warum es diese Seite gibt",
+    "more_wire": "Ganzer Ticker",
+    "tech_desk": "Technik",
+    "world_desk": "Welt",
+    "notebook": "Mehr aus dem Journal"
   },
   "blog": {
     "title": "Blog",
@@ -39,7 +47,12 @@
     "toc": "Inhaltsverzeichnis",
     "search_placeholder": "Artikel suchen...",
     "search_results": "{count} Ergebnisse für \"{query}\"",
-    "no_results": "Keine Ergebnisse für \"{query}\""
+    "no_results": "Keine Ergebnisse für \"{query}\"",
+    "kicker": "Das Journal",
+    "written_by": "Geschrieben von",
+    "post_count": "{count, plural, one {# Artikel} other {# Artikel}}",
+    "copied": "Link kopiert",
+    "copy_link": "Link kopieren"
   },
   "footer": {
     "tagline": "Wörter ohne Grenzen",
@@ -62,6 +75,23 @@
     "placeholder": "Artikel, Themen, Autoren suchen...",
     "results": "{count} Ergebnisse",
     "no_results": "Keine Ergebnisse gefunden",
-    "try_again": "Versuchen Sie einen anderen Suchbegriff"
+    "try_again": "Versuchen Sie einen anderen Suchbegriff",
+    "hint": "Suche nach Titel, Thema oder Autor."
+  },
+  "wire": {
+    "title": "Ticker",
+    "subtitle": "Aktuelle Schlagzeilen aus Technik und Welt von lesenswerten Redaktionen, alle zehn Minuten aktualisiert. Jede Meldung öffnet sich beim ursprünglichen Verlag.",
+    "live": "Live",
+    "all": "Alle",
+    "tech": "Technik",
+    "world": "Welt",
+    "latest": "Neueste Meldung",
+    "english_note": "Schlagzeilen erscheinen auf Englisch, wie veröffentlicht.",
+    "filters": "Ticker filtern",
+    "empty": "Die Feeds sind gerade ruhig. Schau in ein paar Minuten wieder vorbei.",
+    "disclaimer": "Schlagzeilen und Zusammenfassungen gehören ihren Verlagen und stammen aus öffentlichen RSS-Feeds. Dieselben Daten gibt es als JSON unter",
+    "sources": "Ticker-Quellen",
+    "meanwhile": "Unterdessen",
+    "footer_note": "Ticker alle 10 Minuten aktualisiert"
   }
 }
